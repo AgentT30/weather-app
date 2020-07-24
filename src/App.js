@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+const apiKeys = {
+    key: "bccf8fe7f752ac28bdc64bdcdba6922d",
+    base: "https://api.openweathermap.org/data/2.5/",
+};
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const dateBuilder = (d) => {
+        let months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+        ];
+        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        let day = days[d.getDay()];
+        let month = months[d.getMonth()];
+        let year = d.getFullYear();
+        let date = d.getDate();
+
+        return `${day} ${month} ${year} ${date}`;
+    };
+    return (
+        <div className="container">
+            <main>
+                <div className="search-box">
+                    <input
+                        type="text"
+                        className="searchfield"
+                        placeholder="Enter City Name"
+                    ></input>
+                </div>
+                <div className="location-box">
+                    <div className="location">NY City</div>
+                    <div className="date">{dateBuilder(new Date())}</div>
+                </div>
+            </main>
+        </div>
+    );
 }
 
 export default App;
