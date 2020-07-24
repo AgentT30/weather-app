@@ -44,6 +44,10 @@ function App() {
                     <div className="location">NY City</div>
                     <div className="date">{dateBuilder(new Date())}</div>
                 </div>
+                <div className="weather-box">
+                    <div className="temperature">20° C</div>
+                    <div className="weather">Sunny</div>
+                </div>
             </main>
         </div>
     );
