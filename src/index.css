@@ -1,100 +1,118 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "montseratt", sans-serif;
+  font-family: "montseratt", sans-serif;
 }
 
 .container {
-    background-image: url(assets/cold-bg.jpg);
-    background-size: cover;
-    background-position: bottom;
-    transition: 0.4 sec ease-out;
+  background-image: url(assets/cold-bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+.container.clear {
+  background-image: url(assets/clear-bg.jpg);
 }
 
-.container .warm {
-    background-image: url(assets/warm-bg.jpg);
+.container.warm {
+  background-image: url(assets/warm-bg.jpg);
 }
 
 main {
-    min-height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75));
-    padding: 25px;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 25px;
 }
 
 .search-box {
-    width: 100%;
-    margin: 0 0 75px;
+  width: 100%;
+  margin: 0 0 75px;
 }
 
 .search-box .searchfield {
-    display: block;
-    width: 100%;
-    padding: 15px;
+  display: block;
+  width: 100%;
+  padding: 15px;
 
-    appearance: none;
-    background: none;
-    border: none;
-    outline: none;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
 
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
 
-    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
 
-    color: #313131;
-    font-size: 20px;
+  color: #313131;
+  font-size: 20px;
 
-    transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .search-box .searchfield:focus {
-    background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .location-box .location {
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 700;
-    text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
 }
 
 .location-box .date {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-    padding: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
 }
 
 ..weather-box {
-    text-align: center;
+  text-align: center;
 }
 .weather-box .temperature {
-    margin: 30px auto;
-    font-size: 70px;
-    font-weight: 700;
-    text-align: center;
-    color: #fff;
+  margin: 30px auto;
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
 
-    position: relative;
-    padding: 15px 25px;
+  position: relative;
+  padding: 15px 25px;
 
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
 
-    text-shadow: 2px 6px rgba(50, 50, 55, 0.5);
-    box-shadow: 3px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 6px rgba(50, 50, 55, 0.5);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .weather-box .weather {
-    font-size: 40px;
-    color: #fff;
-    font-weight: 700;
-    text-align: center;
-    padding: 10px;
-    text-shadow: 3px 8px rgba(50, 50, 55, 0.5);
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  text-shadow: 3px 8px rgba(50, 50, 55, 0.5);
+}
+
+.opening-page {
+  color: #fff;
+  margin-top: 250px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 1px 2px rgba(50, 50, 55, 0.5);
 }
