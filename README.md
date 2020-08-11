@@ -1,4 +1,4 @@
-#This application is designed for a phone screen, kindly run the project on a compatible device or resize the screen.
+# This application is designed for a phone screen, kindly run the project on a compatible device or resize the screen.
 
 This project shows the current weather in a given city with the associated background images.
 
