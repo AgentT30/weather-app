@@ -1,3 +1,5 @@
+#This application is designed for a phone screen, kindly run the project on a compatible device or resize the screen.
+
 This project shows the current weather in a given city with the associated background images.
 
 This project has been developed with React JS as part of the learning React process.
